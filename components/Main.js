@@ -58,18 +58,8 @@ function Main() {
             
             <div className='xl:max-w-7xl px-8 sm:px-16   mx-auto mb-10 '>
                 <div className='relative h-[300px] sm:h-[300px] lg:h-[500px] xl:h-[600px] 2xl:h-[700px]  '>
-                    <div className='rounded-lg hidden xl:inline-block '>
-                        <Image
-                            src="/55.png"
-                            alt=""
-                            width={1200}
-                            height={600}
-                            layout="fixed"
-                            objectFit='none'
-                            className='rounded-lg '
-                        />
-                    </div>
-                    <div className='rounded-lg  xl:hidden'>
+                    
+                    <div className='rounded-lg  '>
                         <Image
                             src="/55.png"
                             alt=""
