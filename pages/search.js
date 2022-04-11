@@ -4,10 +4,11 @@ import Footer from '../components/Footer'
 import Header from '../components/Header'
 import { format } from "date-fns"
 import PlaceCard from "../components/PlaceCard"
+import Mapp from "../components/Mapp"
 
 function Search({ searchResult }) {
 
- 
+
 
   const router = useRouter(null)
   const { location, startDate, endDate, nGuests } = router.query;
@@ -63,13 +64,8 @@ function Search({ searchResult }) {
 
           </div>
         </section>
-
-
-
-
-
       </main>
-      <div className='border-t  border-gray-200'>
+      <div className='flex  border-t pl-0 md:pl-16 md:pr-16 xl:pr-0 pr-0 xl:pl-0  border-gray-200'>
         <div>
           {searchResult.map(searchResult => (
 
@@ -87,7 +83,11 @@ function Search({ searchResult }) {
           ))}
 
         </div>
+        <section className='hidden xl:inline-block xl:min-w-[600px]   '>
+          <Mapp searchResult={searchResult} />
+        </section>
       </div>
+
       <Footer />
     </div >
   )
